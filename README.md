@@ -33,3 +33,6 @@ As a reference, we provide the results of MAAN below:
 - FLOPs on an LR image of size 256×256: - G
 
     Note that the results reported above are the average of 5 runs, and each run is conducted on the same device (i.e., NVIDIA RTX A6000 GPU).
+
+## Our result test datsets
+[DIV2K_LSDIR_test_SR](https://drive.google.com/file/d/1FmggUV1-kepcvv5SDcb1cKOJa2hU3NPu/view?usp=drive_link)
