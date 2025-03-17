@@ -22,7 +22,7 @@ or take it as a reference based on your original environments.
     - Be sure the change the directories `--data_dir` and `--save_dir`.
 3. More detailed example-command can be found in `run.sh` for your convenience.
 
-As a reference, we provide the results of EFDN (baseline method) below:
+As a reference, we provide the results of MAAN below:
 - Average PSNR on DIV2K_LSDIR_valid: 27.01 dB
 - Average PSNR on DIV2K_LSDIR_test: 27.13 dB
 - Number of parameters: 0.196 M
