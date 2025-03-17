@@ -13,7 +13,7 @@ The evaluation environments adopted by us is recorded in the `requirements.txt`.
 or take it as a reference based on your original environments.
 
 ## The Validation datasets
-After downloaded all the necessary validate dataset ([DIV2K_LSDIR_valid_LR](https://drive.google.com/file/d/1YUDrjUSMhhdx1s-O0I1qPa_HjW-S34Yj/view?usp=sharing) and [DIV2K_LSDIR_valid_HR](https://drive.google.com/file/d/1z1UtfewPatuPVTeAAzeTjhEGk4dg2i8v/view?usp=sharing))
+download all the necessary validate dataset ([DIV2K_LSDIR_valid_LR](https://drive.google.com/file/d/1YUDrjUSMhhdx1s-O0I1qPa_HjW-S34Yj/view?usp=sharing) and [DIV2K_LSDIR_valid_HR](https://drive.google.com/file/d/1z1UtfewPatuPVTeAAzeTjhEGk4dg2i8v/view?usp=sharing))
 
 ## How to test the baseline model?
 
@@ -28,11 +28,9 @@ After downloaded all the necessary validate dataset ([DIV2K_LSDIR_valid_LR](http
 As a reference, we provide the results of MAAN below:
 - Average PSNR on DIV2K_LSDIR_valid: 27.01 dB
 - Average PSNR on DIV2K_LSDIR_test: 27.13 dB
-- Number of parameters: 0.196 M
-- Runtime: - ms (Average runtime of 18.77 ms on DIV2K_LSDIR_valid data and 14.61 ms on DIV2K_LSDIR_test data)
-- FLOPs on an LR image of size 256×256: - G
-
-    Note that the results reported above are the average of 5 runs, and each run is conducted on the same device (i.e., NVIDIA RTX A6000 GPU).
+- Number of parameters: 0.168 M
+- Runtime: - ms (Average runtime of - ms on DIV2K_LSDIR_valid data and - ms on DIV2K_LSDIR_test data)
+- FLOPs on an LR image of size 256×256: 10.62 G
 
 ## Our result test datsets
 [DIV2K_LSDIR_test_SR](https://drive.google.com/file/d/1FmggUV1-kepcvv5SDcb1cKOJa2hU3NPu/view?usp=drive_link)
