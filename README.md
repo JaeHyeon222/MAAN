@@ -15,7 +15,7 @@ or take it as a reference based on your original environments.
 ## The Validation datasets
 download all the necessary validate dataset ([DIV2K_LSDIR_valid_LR](https://drive.google.com/file/d/1YUDrjUSMhhdx1s-O0I1qPa_HjW-S34Yj/view?usp=sharing) and [DIV2K_LSDIR_valid_HR](https://drive.google.com/file/d/1z1UtfewPatuPVTeAAzeTjhEGk4dg2i8v/view?usp=sharing))
 
-## How to test the baseline model?
+## How to test the our model?
 
 1. `git clone https://github.com/JaeHyeon222/MAAN.git`
 2. Select the model you would like to test from [`run.sh`](./run.sh)
