@@ -1,4 +1,4 @@
-# MAAN
+# NTIRE2025 Efficient Super-resoluiton
 
 ## The Environments
 
