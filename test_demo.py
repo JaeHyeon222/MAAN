@@ -27,13 +27,15 @@ def select_model(args, device):
         model_path = os.path.join('model_zoo', 'team00_EFDN.pth')
         model = EFDN()
         model.load_state_dict(torch.load(model_path), strict=True)
-    elif model_id == 1:
-        pass # ---- Put your model here as below ---
-        # from models.team01_[your_model_name] import [your_model_name]
-        # name, data_range = f"{model_id:02}_[your_model_name]", [255.0 / 1.0] # You can choose either 1.0 or 255.0 based on your own model
-        # model_path = os.path.join('model_zoo', 'team01_[your_model_name].pth')
-        # model = [your_model_name]()
-        # model.load_state_dict(torch.load(model_path), strict=True)
+    elif model_id == 29:
+        # ---- Put your model here as below ---
+        from models.team29_MAANRep import MAAN_rep
+        name, data_range = f"{model_id:02}_MAAN",  1.0 # You can choose either 1.0 or 255.0 based on your own model
+        model_path = os.path.join('model_zoo', 'team29_MAANRep.pth')
+        model = MAAN_rep()
+        model.load_state_dict(torch.load(model_path)['params'], strict=True)
+    else:
+        raise NotImplementedError(f"Model {model_id} is not implemented.")
     else:
         raise NotImplementedError(f"Model {model_id} is not implemented.")
 
