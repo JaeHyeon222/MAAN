@@ -18,12 +18,13 @@ download all the necessary validate dataset ([DIV2K_LSDIR_valid_LR](https://driv
 ## How to test the our model?
 
 1. `git clone https://github.com/JaeHyeon222/MAAN.git`
-2. Select the model you would like to test from [`run.sh`](./run.sh)
+2. cd NTIRE2025_ESR
+3. Select the model you would like to test from [`run.sh`](./run.sh)
     ```bash
     CUDA_VISIBLE_DEVICES=0 python test_demo.py --data_dir [path to your data dir] --save_dir [path to your save dir] --model_id 29
     ```
     - Be sure the change the directories `--data_dir` and `--save_dir`.
-3. More detailed example-command can be found in `run.sh` for your convenience.
+4. More detailed example-command can be found in `run.sh` for your convenience.
 
 As a reference, we provide the results of MAAN below:
 - Average PSNR on DIV2K_LSDIR_valid: 27.01 dB
