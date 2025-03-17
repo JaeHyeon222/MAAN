@@ -12,6 +12,9 @@ The evaluation environments adopted by us is recorded in the `requirements.txt`.
 
 or take it as a reference based on your original environments.
 
+## The Validation datasets
+After downloaded all the necessary validate dataset ([DIV2K_LSDIR_valid_LR](https://drive.google.com/file/d/1YUDrjUSMhhdx1s-O0I1qPa_HjW-S34Yj/view?usp=sharing) and [DIV2K_LSDIR_valid_HR](https://drive.google.com/file/d/1z1UtfewPatuPVTeAAzeTjhEGk4dg2i8v/view?usp=sharing))
+
 ## How to test the baseline model?
 
 1. `git clone https://github.com/JaeHyeon222/MAAN.git`
