@@ -2,9 +2,6 @@ import os
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from basicsr.utils.registry import ARCH_REGISTRY
-
-
 
 class LayerNorm(nn.Module):
     r""" From ConvNeXt (https://arxiv.org/pdf/2201.03545.pdf)
@@ -311,7 +308,6 @@ class UpsampleOneStep(nn.Sequential):
 
 
 
-@ARCH_REGISTRY.register()
 class MAAN(nn.Module):
     def __init__(self, in_chans=3, embed_dim=48, depths=(2, 3, 2), mlp_ratio=2, scale=4, img_range=1., upsampler='pixelshuffledirect'):
         super(MAAN, self).__init__()
