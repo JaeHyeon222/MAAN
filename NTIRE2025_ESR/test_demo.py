@@ -36,8 +36,6 @@ def select_model(args, device):
         model.load_state_dict(torch.load(model_path)['params'], strict=True)
     else:
         raise NotImplementedError(f"Model {model_id} is not implemented.")
-    else:
-        raise NotImplementedError(f"Model {model_id} is not implemented.")
 
     # print(model)
     model.eval()
