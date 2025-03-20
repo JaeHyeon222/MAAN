@@ -2,7 +2,6 @@ import os
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from basicsr.utils.registry import ARCH_REGISTRY
 
 
 
@@ -231,7 +230,6 @@ class UpsampleOneStep(nn.Sequential):
 
 
 
-@ARCH_REGISTRY.register()
 class MAAN_rep(nn.Module):
     def __init__(self, in_chans=3, embed_dim=48, depths=(2, 3, 2), mlp_ratio=2, scale=4, img_range=1., upsampler='pixelshuffledirect'):
         super(MAAN_rep, self).__init__()
