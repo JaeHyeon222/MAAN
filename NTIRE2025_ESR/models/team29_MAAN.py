@@ -37,7 +37,7 @@ def get_conv2d(in_channels, out_channels, kernel_size, stride, padding, dilation
 
 
 
-class MultiscaleLSKA(nn.Module):
+class MultiscaleLSK(nn.Module):
     def __init__(self, in_channels,  branch_ratio=0.25):
         super().__init__()
         
@@ -223,7 +223,7 @@ class ConvMod(nn.Module):
         self.a = nn.Sequential(
             nn.Conv2d(dim, dim, 1),
             nn.GELU(),
-            MultiscaleLSKA(dim)
+            MultiscaleLSK(dim)
         )
         self.v = nn.Conv2d(dim, dim, 1)
         self.proj = nn.Conv2d(dim, dim, 1)
