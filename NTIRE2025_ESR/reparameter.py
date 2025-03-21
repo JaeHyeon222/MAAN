@@ -4,7 +4,7 @@ from models.team29_MAAN import MAAN
 from models.team29_MAANRep import MAAN_rep
 
 
-path = "model_zoo/team29_WorkingTitle.pth"
+path = "model_zoo/team29_MAAN.pth"
 state_dict = torch.load(path)
 
 
